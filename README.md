@@ -11,16 +11,12 @@ This project uses intermediate Python concepts like functions, dictionaries, lis
 ---
 
 ## 🎯 2. Objectives
-
+```text
 The main objectives of this project are:
 > 🐍 To understand and implement Python functions and modular design.
-
 > ⌨️ To accept and validate input from users safely.
-
 > 📦 To use complex data structures like dictionaries and lists.
-
 > 🔀 To apply if-elif-else conditions and nested loops.
-
 > ➕ To perform dynamic pricing and calculations.
 > 🎬 To display organized movie catalogs and showtimes.
 > 💺 To implement interactive seat layout mapping.
@@ -28,11 +24,11 @@ The main objectives of this project are:
 > 📋 To generate formatted booking summaries and receipts.
 > ❌ To handle ticket cancellations and refund logic.
 > 🌍 To build a foundational, real-world console application.
-
+```
 ---
 
 ## ⚙️ 3. System Features
-
+```text
 The system provides the following core features:
 1. 🔐 User Registration & Login System.
 2. 🎬 Browse available movies and genres.
@@ -46,7 +42,7 @@ The system provides the following core features:
 10. ❌ Ticket cancellation workflow.
 11. 💵 Automated refund money calculation.
 12. 🧾 Final transaction and refund receipt output.
-
+```
 ---
 
 ## 🛠️ 4. Tools Used

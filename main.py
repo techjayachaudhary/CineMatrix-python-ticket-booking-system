@@ -62,21 +62,45 @@ def main():
             except ValueError:
                 print("❌ Invalid input! Please enter a number.")
 
-    # 4. Interactive Seat Matrix
+    # 4. Interactive Seat Matrix with Validation Fix
     def display_seat_matrix():
         print("--- 💺 Interactive Seat Matrix ---")
         print("Available: [ ]  |  Booked: [X]\n")
-        seats = [
-            ["[ ]", "[ ]", "[ ]"],
-            ["[X]", "[ ]", "[ ]"],
-            ["[ ]", "[X]", "[ ]"]
-        ]
-        for i, row in enumerate(seats):
-            print(f"Row {i+1}: {' '.join(row)}")
         
-        seat_num = input("\nEnter your preferred seat choice (e.g., Row 1 Seat 2): ").strip()
-        print(f"✅ Seat '{seat_num}' locked successfully!\n")
-        return seat_num
+        # Matrix representation (Rows 1 to 3, Seats 1 to 3)
+        seats = [
+            ["[ ]", "[ ]", "[ ]"],  # Row 1
+            ["[X]", "[ ]", "[ ]"],  # Row 2 (Row 2 Seat 1 is booked)
+            ["[ ]", "[X]", "[ ]"]   # Row 3 (Row 3 Seat 2 is booked)
+        ]
+        
+        while True:
+            # Display current matrix status
+            for i, row in enumerate(seats):
+                print(f"Row {i+1}: {' '.join(row)}")
+            
+            print("\nEnter seat choice format e.g., '1 2' for Row 1, Seat 2")
+            try:
+                r_input = input("Enter Row number (1-3): ").strip()
+                s_input = input("Enter Seat number (1-3): ").strip()
+                
+                row_idx = int(r_input) - 1
+                seat_idx = int(s_input) - 1
+                
+                if 0 <= row_idx < 3 and 0 <= seat_idx < 3:
+                    # Check if the seat is already booked
+                    if seats[row_idx][seat_idx] == "[X]":
+                        print("\n❌ Error: This seat is already booked! Please choose an available seat `[ ]`.\n")
+                    else:
+                        # Lock the seat
+                        seats[row_idx][seat_idx] = "[X]"
+                        seat_name = f"Row {row_idx + 1} Seat {seat_idx + 1}"
+                        print(f"✅ Seat '{seat_name}' locked successfully!\n")
+                        return seat_name
+                else:
+                    print("\n❌ Invalid row or seat number! Please enter numbers between 1 and 3.\n")
+            except ValueError:
+                print("\n❌ Invalid input! Please enter valid integer numbers.\n")
 
     # 5. Ticket Types & Pricing
     def get_ticket_type():

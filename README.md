@@ -104,11 +104,11 @@ End 🏁
 ## 🎬 7. Available Movies
 
 The system provides the following movies:
-1. 🎬 **Avatar: The Way of Water**
-2. 🦸 **Avengers: Secret Wars**
-3. 🕷️ **Spider-Man: Beyond the Spider-Verse**
-4. 🦖 **Jurassic World: Rebirth**
-5. 👻 **The Conjuring: Last Rites**
+1. 🦇 **The Batman: Part II**
+2. ⚡ **Deadpool & Wolverine**
+3. 🌌 **Interstellar (Re-Release)**
+4. 🏎️ **F1: The Movie**
+5. 🦁 **Mufasa: The Lion King**
 
 ---
 

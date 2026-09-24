@@ -15,12 +15,12 @@ def main():
 
     # 2. Display Movies Catalog
     def display_movies():
-        movies = [
-            "1. 🎬 Avatar: The Way of Water",
-            "2. 🦸 Avengers: Secret Wars",
-            "3. 🕷️ Spider-Man: Beyond the Spider-Verse",
-            "4. 🦖 Jurassic World: Rebirth",
-            "5. 👻 The Conjuring: Last Rites"
+       movies = [
+            "1. 🦇 The Batman: Part II",
+            "2. ⚡ Deadpool & Wolverine",
+            "3. 🌌 Interstellar (Re-Release)",
+            "4. 🏎️ F1: The Movie",
+            "5. 🦁 Mufasa: The Lion King"
         ]
         print("--- 🎬 Available Movies ---")
         for movie in movies:

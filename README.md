@@ -14,9 +14,13 @@ This project uses intermediate Python concepts like functions, dictionaries, lis
 
 The main objectives of this project are:
 > 🐍 To understand and implement Python functions and modular design.
+
 > ⌨️ To accept and validate input from users safely.
+
 > 📦 To use complex data structures like dictionaries and lists.
+
 > 🔀 To apply if-elif-else conditions and nested loops.
+
 > ➕ To perform dynamic pricing and calculations.
 > 🎬 To display organized movie catalogs and showtimes.
 > 💺 To implement interactive seat layout mapping.
